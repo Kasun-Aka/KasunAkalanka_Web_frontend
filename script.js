@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!token) return;
 
   try {
-    const res = await fetch("http://localhost:5000/api/users/me", {
+    const res = await fetch("https://kasunakalanka-web-backend.onrender.com/api/users/me", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`
@@ -173,7 +173,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
   const message = document.getElementById("message").value;
 
   try {
-    const res = await fetch("http://localhost:5000/api/messages", {
+    const res = await fetch("https://kasunakalanka-web-backend.onrender.com/api/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -205,7 +205,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/download-cv/", {
+      const response = await fetch("https://kasunakalanka-web-backend.onrender.com/api/download-cv/", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${idToken}`
