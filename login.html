@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - KasunAkalanka | GhostDevKA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family: "Quicksand", sans-serif;
+            font-weight: 700;
+        }
+
+
+        :root {
+    --bg-color: rgba(31, 36, 45);
+    --second-bg-color: rgba(50, 57, 70);
+    --text-color: #fff;
+    --main-color: rgba(255, 128, 0);
+    --main-color-darken: rgba(255, 128, 0, 0.5);
+    --btn-txt: rgba(50, 57, 70);
+    --header-bg: rgba(0, 0, 0, 0.4);
+    --header-tx: #fff;
+}
+
+.light-theme {
+    --bg-color: rgba(96, 129, 200, 0.83);  
+    --second-bg-color: rgba(208, 230, 255);     
+    --text-color: rgba(30, 41, 59); 
+    --main-color: rgba(218, 119, 53);
+    --main-color-darken: rgba(218, 119, 53, 0.5);
+    --btn-txt: rgba(255, 255, 255);
+    --header-bg: rgba(0, 0, 0, 0.7);
+    --header-tx: #fff;
+}
+
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        #bg-video {
+          position: fixed;
+          top: 0;
+          left: 0;
+          min-width: 100%;
+          min-height: 100%;
+          object-fit: cover;
+          z-index: -1; /* Send it behind all other elements */
+          opacity: 0.35; /* Optional: for a subtle background look */
+        }
+
+        .login-container {
+            max-width: 370px;
+            margin: 60px auto;
+            background: rgba(255,255,255,0.2);
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            padding: 32px 24px 20px 24px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            font-weight: bold;
+        }
+        h2 {
+            margin-bottom: 22px;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 24px;
+        }
+        label {
+            text-align: left;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            padding: 10px 12px;
+            border: 1.2px solid #c0c0c0;
+            border-radius: 6px;
+            font-size: 18px;
+            background: rgba(255,255,255,0.85);
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        button[type="submit"] {
+            margin-top: 14px;
+            padding: 11px 0;
+            background: var(--main-color);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button[type="submit"]:hover {
+            background: var(--main-color);
+        }
+
+        .overlay {
+            min-height: 80vh;
+        }
+
+        .login-container a {
+            color: #d2b48c;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+            font-size: 18px;
+        }
+        .login-container a:hover {
+            color: #b89b6b;
+        }
+        .login-container a.register-link,
+        .login-container a.dashboard-link {
+            color: var(--main-color) !important;
+            font-weight: bold;
+            font-size: 1.7rem;
+        }
+        .login-container a.register-link:hover,
+        .login-container a.dashboard-link:hover {
+            color: var(--main-color) !important;
+            text-decoration: underline;
+        }
+        .login-container p {
+            margin-top: 12px;
+            color: var(--text-color);
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-weight: bold;
+        }
+
+        .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+    </style>
+</head>
+<body>
+
+  <video autoplay muted loop playsinline id="bg-video">
+  <source src="assets/bgvid.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+  </video>
+
+<div class="overlay">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>
+            Don't have an account?
+            <a href="register.html" class="register-link">Register</a>
+        </p>
+        <p>
+            <a href="index.html" class="dashboard-link">Back to Home Page</a>
+        </p>
+    </div>
+</div>
+    
+
+<!-- footer design -->
+         <footer class="footer">
+          <div class="footer-text">
+            <p>Copyright &copy; 2025 by GhostDevKA | All Rights Reserved.</p>
+          </div>
+
+         </footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyCvjAHVlwSIPrPjT3DOtF00GL_5MI-vYxc",
+    authDomain: "kasunakalanka-web.firebaseapp.com",
+    projectId: "kasunakalanka-web",
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+  const form = document.getElementById("loginForm");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    try {
+      const userCred = await auth.signInWithEmailAndPassword(email, password);
+
+      // Get a fresh ID token
+      const token = await userCred.user.getIdToken(true);
+
+      // Save token to localStorage
+      localStorage.setItem("authToken", token);
+
+      alert("Login successful!");
+      window.location.href = "index.html";
+    } catch (err) {
+      alert("Login failed: " + err.message);
+      console.error(err);
+    }
+  });
+
+
+    /*================ theme toggle =============== */
+var themeIcon = document.getElementById('theme-toggle');
+
+// Apply saved theme on page load
+if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add("light-theme");
+    themeIcon.classList.remove('bx-moon');
+    themeIcon.classList.add('bx-sun');
+}
+</script>
+
+</body>
+</html>

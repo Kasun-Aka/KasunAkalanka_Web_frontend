@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KasunAkalanka | GhostDevKA</title>
+
+    <!-- box icons -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="myprojects.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Grenze+Gotisch:wght@700&family=Gugi&family=Overlock:ital@1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    
+  
+  </head>
+
+  <body class="lock-scroll">
+
+    <video autoplay muted loop playsinline id="bg-video">
+    <source src="assets/bgvid.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+    </video>
+
+    <div class="scroll-wrapper"> 
+    <!-- header design -->
+    <header class="header"> 
+      <img src="assets/ghostdevKA.png" alt="GhostDevKA">
+      <!--a href="#" class="logo">GhostDevKA</a-->
+
+      <div class="navhead">
+      <nav class="navbar">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About Me</a>
+        <a href="index.html#contact">Contact Me</a>
+        <a href="myprojects.html" class="active">My Projects</a>
+        <a href="other.html">Other</a>
+      </nav>
+        
+        <i class='bx  bx-moon' id="theme-toggle" > </i>
+
+        <a href="login.html" class="btn">Login</a>
+
+        <i class='bx  bx-menu-wide' id="menu-icon"></i>
+      
+      </div>
+
+    </header>
+
+    <!-- Projects section design -->
+    <section class="projects" id="projects">
+      <h2 class="heading">My <span>Projects</span></h2>
+      <div class="projects-container">
+        <div class="projects-box">
+        <img src="assets/project 1.png" alt="">
+            <div class="projects-layer">
+                <i class='bx  bx-pacman'  ></i>   
+                <h3>Project PacMan v2</h3>
+                <p>Fan made pacman game which can be play on browser.</p>
+                <div class="btn-layer">
+                <a href="#pacmanv2" class="btn" onclick="revealSlideshow('pacmanv2')">Read More...</a>
+                <br>
+                <a href="assets/Pacman V2.html" class="btn" target="_blank" rel="noopener noreferrer">Play Now</a>
+        </div> </div> </div>
+        
+        <div class="projects-box">
+        <img src="assets/project 2.png" alt="">
+            <div class="projects-layer">
+                <i class='bx  bx-code-alt'  ></i>    
+                <h3>Wedding Planner WebApp</h3>
+                <p>My 1st year group project at SLIIT uni</p>
+                <div class="btn-layer">
+                <a href="#weddingplanner" class="btn" onclick="revealSlideshow('weddingplanner')">Read More...</a>
+        </div> </div> </div>
+
+
+        
+      </div>
+    </section>
+
+    <!-- footer design -->
+         <footer class="footer">
+          <div class="footer-text">
+            <p>Copyright &copy; 2025 by GhostDevKA | All Rights Reserved.</p>
+          </div>
+
+          <div class="footer-iconTop">
+            <a href="#projects"><i class='bx  bx-arrow-big-up-line'  ></i></a>
+          </div>
+         </footer>
+
+    </div>
+
+
+    <!-- Projects extended section design -->
+    <div class="scroll-wrapper">
+    
+    <section class="exdprojects" id="pacmanv2"> 
+      <h2>Project <span>Pacman</span> v2</h2>
+      <div class="slideshow-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+            <img id="1slide-1" src="assets/project 1.png"  alt="Starting screen"/>
+
+            <img id="1slide-2" src="assets/pacmanv2 2.png" alt="Instructions screen"/>
+
+            <img id="1slide-3" src="assets/pacmanv2 3.png" alt="Gameplay screen"/>
+          </div>
+
+          <div class="slider-nav">
+		    	<a href="#1slide-1"></a>
+		    	<a href="#1slide-2"></a>
+		    	<a href="#1slide-3"></a>
+		      </div>
+        </div>
+        </div>
+
+      <div class="middlebox">
+        <p>A fan-made recreation of the classic <b>Pac-Man</b> game, built using <b>Scratch 3</b> and enhanced with improved movement, better visuals, and clean logic.  
+This project is developed <b>solely for entertainment purposes</b>, with no commercial intent.
+        </p> <br>
+
+        <p> 📁 Project Info
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  - 💻 Platform: Scratch 3.0 (converted to HTML)
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  - 🛠 Built with: Scratch blocks + TurboWarp Packager
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  - 📦 Output format: HTML (browser-playable) 
+        </p> <br>
+
+        <p> 📝 Credits & Disclaimer
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  > This project was entirely developed by <b>GhostDevKA</b> for entertainment purposes only.  
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  > It is <b>not intended for commercial use</b>.  
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  > Some content (characters, sounds, sprites) is not owned by the creator.  
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  > <b>All rights and credits go to their respective owners.</b>  
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  > This is a fan-made project created with respect to the original Pac-Man game.
+        </p> <br>
+
+        <p> 🚀 How to Run
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  1. Download the '.html' file using the Download button below.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  2. Double-click to open in any modern browser (Chrome, Edge, Firefox, etc).
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  3. No installation needed. No security warnings.  
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;  ✅ Works on Windows and most modern systems.  
+        </p>
+        <h3>Download the game file</h3>
+        <h4>download .html file and open with any browser.</h4>
+        <a href="#" class="btn">Download</a>
+        <a href="#projects" class="btn">Back to My Projects</a>
+      </div>
+    </section>
+    <!-- footer design -->
+         <footer class="footer">
+          <div class="footer-text">
+            <p>Copyright &copy; 2025 by GhostDevKA | All Rights Reserved.</p>
+          </div>
+
+          <div class="footer-iconTop">
+            <a href="#projects"><i class='bx  bx-arrow-big-up-line'  ></i></a>
+          </div>
+         </footer>
+    </div>
+
+
+    <div class="scroll-wrapper">
+    
+    <section class="exdprojects" id="weddingplanner"> 
+      <h2>Wedding Planner <span>WebApp</span></h2>
+      <div class="slideshow-container">
+          <div class="slider-wrapper">
+            <div class="slider">
+            <img id="2slide-1" src="assets/project 2.png"  alt="Homepage"/>
+
+            <img id="2slide-2" src="assets/wedding_planner2.png" alt="Booking page"/>
+
+            <img id="2slide-3" src="assets/wedding_planner3.png" alt="Vendor list page"/>
+          </div>
+
+          <div class="slider-nav">
+		    	<a href="#2slide-1"></a>
+		    	<a href="#2slide-2"></a>
+		    	<a href="#2slide-3"></a>
+		      </div>
+        </div>
+        </div>
+
+      <div class="middlebox">
+        <p>This was our first year group project at our university. We built a wedding planner webapp. It includes a User Management System, Vendor
+          Management System, Booking Management System, Billing System and Review System. 
+        </p> <br>
+
+        <p> 🔧 Technologies Used
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; - Java (Spring Boot)
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; - HTML/CSS/JS
+          </p><br>
+
+        <p> 👨‍💻 My Contribution
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; I developed:
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; - Booking Management System
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; (handled controller, service, repository, model and frontend pages)
+          </p><br>
+
+        <p> 🧑‍🤝‍🧑 Team Credits
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; - Kasun Akalanka
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; - Tharuka Kumarasiri
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; - Ilma Fariz
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; - Shenali Fernando
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; - Vishmi Dissanayeke
+          </p><br>
+
+        <p> ⚙️ How to Run
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; 1. Clone the repo
+          <br>&nbsp;&nbsp;&nbsp;&nbsp; 2. Run `BackendApplication.java` in your IDE
+        </p>
+        <h3>Go to the GitHub repository</h3>
+        <h4>You can clone the repo and run it yourself.</h4>
+        <a href="https://github.com/Kasun-Aka/wedding-planning-webapp" class="btn" target="_blank" rel="noopener noreferrer">Click here</a>
+        <a href="#projects" class="btn">Back to My Projects</a>
+
+      </div>
+    </section>
+    <!-- footer design -->
+         <footer class="footer">
+          <div class="footer-text">
+            <p>Copyright &copy; 2025 by GhostDevKA | All Rights Reserved.</p>
+          </div>
+
+          <div class="footer-iconTop">
+            <a href="#projects"><i class='bx  bx-arrow-big-up-line'  ></i></a>
+          </div>
+         </footer>
+      </div>
+
+    
+
+      <!-- scroll reveal -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+     <!-- typed js --> 
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+     <!-- custom js -->
+      <script src="myprojects.js"></script>
+
+
+  </body>
+
+</html>
