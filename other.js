@@ -64,6 +64,18 @@ window.onscroll = () => {
 };
 
 
+/* ================== Birthday wish ===================== */
+const allowedUID = "RftqoFvpeNSStw37Aw06A4TiUdw1"; // replace with the actual UID
+
+firebase.auth().onAuthStateChanged((user) => {
+    if (user && user.uid === allowedUID) {
+        document.getElementById("bday-secret").style.display = "block";
+    } else {
+        document.getElementById("bday-secret").style.display = "none";
+    }
+});
+
+
 /* ================== scroll animations ================= */
 
 AOS.init();

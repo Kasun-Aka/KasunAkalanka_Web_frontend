@@ -22,7 +22,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Grenze+Gotisch:wght@700&family=Gugi&family=Overlock:ital@1&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
-
+    <!-- Firebase App (core) -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+    <script>
+      // Your Firebase config here
+      const firebaseConfig = {
+        apiKey: "AIzaSyCvjAHVlwSIPrPjT3DOtF00GL_5MI-vYxc",
+        authDomain: "kasunakalanka-web.firebaseapp.com",
+        projectId: "kasunakalanka-web",
+      };
+    
+      firebase.initializeApp(firebaseConfig);
+    </script>
   
   </head>
 
@@ -84,6 +97,21 @@
               <a href="#"><i class='bx  bx-arrow-out-up-right-stroke-square'  ></i> </a>
             </div>   -->
           </div>
+
+          <div class="other-box">
+          </div> 
+
+          <div class="other-box">
+          </div> 
+
+          <div class="other-box" id="bday-secret" style="display: none;">
+            <img src="assets/other_bday.png" alt="" style="opacity: 100%;">
+            <div class="other-layer">
+              <h4>Happy Birthday</h4>
+              <p>click the button below</p>
+              <a href="birthday.html"><i class='bx  bx-arrow-out-up-right-stroke-square'  ></i> </a>
+            </div>
+          </div> 
         </div>
       
         
