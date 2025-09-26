@@ -65,7 +65,7 @@ window.onscroll = () => {
 
 
 /* ================== Birthday wish ===================== */
-const allowedUID = "RftqoFvpeNSStw37Aw06A4TiUdw1"; // replace with the actual UID
+const allowedUID = "WplQxN21UrM7kWDGS8PxNm56T5r1"; // replace with the actual UID
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user && user.uid === allowedUID) {
