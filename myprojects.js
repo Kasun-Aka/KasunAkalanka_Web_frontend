@@ -76,7 +76,7 @@ window.onscroll = () => {
     ScrollReveal().reveal('.heading', { origin: 'top' });
     
 
-/*================ extd animations ====================== */
+/*================ extd animations ====================== 
 
     function revealSlideshow(sectionId) {
   const section = document.getElementById(sectionId);
@@ -89,7 +89,34 @@ window.onscroll = () => {
       slideshow.classList.add('revealed');
     }, 500);
   }
+} */
+
+/*================ slideshow test ====================== */
+// This function runs for every slideshow on your page
+function initSlideshows() {
+    const containers = document.querySelectorAll('.slideshow-container');
+
+    containers.forEach((container) => {
+        let currentIndex = 0;
+        const slides = container.querySelectorAll('.slideimg');
+        const totalSlides = slides.length;
+
+        // Don't start if there are no images
+        if (totalSlides === 0) return;
+
+        setInterval(() => {
+            // 1. Remove 'active' from the current image
+            slides[currentIndex].classList.remove('active');
+
+            // 2. Calculate next index (loops back to 0 automatically)
+            currentIndex = (currentIndex + 1) % totalSlides;
+
+            // 3. Add 'active' to the next image
+            slides[currentIndex].classList.add('active');
+        }, 2000);
+    });
 }
 
-
+// Run once the page is loaded
+window.addEventListener('DOMContentLoaded', initSlideshows);
 
