@@ -458,7 +458,6 @@ span {
 
 /* Shared styles for all skill items */
 .about-content .skills .java,
-.about-content .skills .spring,
 .about-content .skills .scratch,
 .about-content .skills .Clang,
 .about-content .skills .python {
@@ -480,6 +479,7 @@ span {
   cursor: default;
 }
 
+.about-content .skills .spring,
 .about-content .skills .frontend {
     display: flex;
     align-items: center;
