@@ -117,6 +117,10 @@ function initSlideshows() {
     });
 }
 
+// Auto-update footer year
+document.getElementById("year").textContent = new Date().getFullYear();
+
 // Run once the page is loaded
 window.addEventListener('DOMContentLoaded', initSlideshows);
+
 

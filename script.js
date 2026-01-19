@@ -1,3 +1,8 @@
+// ---- Wake up backend ----
+fetch("https://kasunakalanka-web-backend.onrender.com/api/health")
+  .then(() => console.log("Backend awake"))
+  .catch(() => console.log("Backend waking up"));
+
 /*================ toggle icon navbar =============== */
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -108,7 +113,12 @@ AOS.init({
 
 /*================ typed js =============== */
 const typed1 = new Typed('.multiple-text1', {
-    strings: ['Software Engineer UG', 'Full Stack Developer', 'Tech Enthusiast', 'Gamer'],
+    strings: [
+      'Software Engineering Undergraduate',
+      'Backend & Frontend Developer',
+      'Problem Solver',
+      'Tech Enthusiast'
+    ],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -116,7 +126,7 @@ const typed1 = new Typed('.multiple-text1', {
 });
 
 const typed2 = new Typed('.multiple-text2', {
-    strings: ['Me', 'Kasun'],
+    strings: ['Me', 'Kasun Akalanka'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -124,7 +134,7 @@ const typed2 = new Typed('.multiple-text2', {
 });
 
 const typed3 = new Typed('.multiple-text3', {
-    strings: ['Me', 'Kasun'],
+    strings: ['Me', 'Kasun Akalanka'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -233,3 +243,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
       alert("Download failed: " + error.message);
     }
   });
+
+
+// Auto-update footer year
+document.getElementById("year").textContent = new Date().getFullYear();

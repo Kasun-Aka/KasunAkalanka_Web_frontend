@@ -474,7 +474,7 @@ span {
     <!-- footer design -->
      <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2025 by GhostDevKA | All Rights Reserved.</p>
+        <p>Copyright &copy; <span id="year"></span> GhostDevKA | All Rights Reserved.</p>
       </div>
       <div class="footer-iconTop">
         <a href="#birthday"><i class='bx  bx-arrow-big-up-line'  ></i></a>
@@ -533,6 +533,9 @@ themeIcon.onclick = function () {
     /*======= remove toggle icon and navbar when click navbar link ========= */
     menuIcon.classList.remove('bx-x-circle');
     navbar.classList.remove('active');
+
+    // Auto-update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
 
       </script>
 </body>
