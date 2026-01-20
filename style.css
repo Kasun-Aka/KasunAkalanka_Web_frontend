@@ -185,7 +185,7 @@ section {
     font-family: "Overlock", sans-serif;
     font-weight: 700;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .home-content h3 .multiple-text1 {
@@ -193,7 +193,7 @@ section {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 .home-content h3:nth-of-type(1) {

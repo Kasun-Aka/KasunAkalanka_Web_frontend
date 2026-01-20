@@ -115,7 +115,7 @@ AOS.init({
 const typed1 = new Typed('.multiple-text1', {
     strings: [
       'Software Engineering Undergraduate',
-      'Backend & Frontend Developer',
+      'Backend and Frontend Developer',
       'Problem Solver',
       'Tech Enthusiast'
     ],
